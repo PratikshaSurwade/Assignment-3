@@ -1,0 +1,210 @@
+/*-----TaskList-----*/
+
+.main-container {
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "adobe-clean", sans-serif;
+  }
+.hr-margin{
+    margin-left:  25%;
+    color: black;
+    margin-bottom: 0rem;
+}
+.head-line-container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0rem;
+}
+.icon-pluscircle{
+    color: #e25822 ;
+    font-size: 2rem;
+    margin-right: 0.3em;
+}
+.task{
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+.lists{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: gray;
+    font-size: 3rem;
+}
+.addlists{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    color: gray;
+    font-size: 1.6rem;
+    margin-left: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+.cards-container{
+    margin-top: 2rem;
+    display: flex;
+    margin-left: 0rem;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: auto;
+
+}
+.todo-cards{
+    width: 15rem;
+    height: 20rem;
+    margin-top: 1.25rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    border: 1px solid gray;
+    border-radius: 0.4375rem;
+    box-shadow: 0.125rem 0.25rem 0.375rem rgb(197, 195, 195);
+    color: #e25822;
+    border-color: #e25822;
+    position: relative;
+}
+.card-icon{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+.trip-card{
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #e25822;
+    font-weight: bold ;
+    margin-left: 25%;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+.complete-popup{
+    font-family: 'Roboto', sans-serif;
+    color: #e25822;
+    font-weight: bold ;
+    margin-top: 30px;
+    margin-left: 25%;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 0.25rem ;
+
+}
+.checkbox-popup{
+    margin-top: 1rem;
+    color: black;
+    font-weight: bold ;
+
+}
+.pending-popup{
+    margin-top: 0.625rem;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bold ;
+}
+
+
+
+
+/*Blur effect */
+
+
+.main-container-2 {
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: auto;
+    font-family: "adobe-clean", sans-serif;
+    filter: blur(0.4em);
+  }
+
+
+  /*-----Add new list popup-----*/
+
+
+.addnewlist-container{
+    top: 10rem;
+    left: 40%;
+    right: 40%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: #e25822;
+}
+.addnewlist-box{
+    width: 18.75rem;
+    height: 12.5rem;
+    margin: auto;
+    font-size: 1.5625rem;
+    border: 0.0625rem solid #e25822;
+    border-radius: 0.625rem;
+    filter: blur(0rem);
+    background-color: white;
+}
+.title-addlist{
+    color: #e25822;
+    font-size: 1.5625rem;
+    margin: 0.9375rem;
+}
+.name-container{
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+}
+.name{
+    padding: 0.3125rem;
+    border-radius: 0.1875rem;
+    font-size: 1rem;
+    border: 0.0625rem solid #e25822;
+    min-width: 75%;
+    margin-bottom: 1.25rem;
+  }
+  .add-button-style{
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    padding: 0.5rem 0.5rem;
+    height: 2.5rem;
+    width: 4.4rem;
+    border-radius: 0.625rem;
+    margin-bottom: 0.525rem;
+    color: white;
+    background-color: #e25822;
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+ 
+@media only screen and (min-width :180px) and (max-width : 480px){
+    html {
+      font-size: 60%;
+    }
+    .main-container{
+        margin: 0px;
+    }
+    .main-container-2{
+        margin: 0px;
+    }
+    .head-line-container{
+        font-size: 50%;
+    }
+    .cards-container{
+        justify-content: center;
+    }
+  }
+  @media only screen and (min-width :481px) and (max-width : 769px){
+    html {
+      font-size: 80%;
+    }
+    .cards-container{
+        justify-content: center;
+    }
+}
